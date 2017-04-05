@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.quizapp.MainActivity">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Space Quiz"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:paddingTop="80dp"
+            android:textColor="#E0F7FA"
+            android:textSize="44sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/earth"
+            android:layout_gravity="center"
+            />
+
+        //Enter Your name here
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:gravity="center"
+            android:hint="Click Here To Add Your Name"
+            android:textColorHint="#E0F7FA"
+            android:textColor="#E0F7FA"
+            android:inputType="textCapWords"
+            />
+
+        // Intro
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:textColor="#E0F7FA"
+            android:text="Test your space knowledge with the following quiz"
+            android:textAllCaps="true"
+            />
+
+
+
+
+
+        // Q1 Image
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:src="@drawable/sputnik"
+            android:layout_gravity="center"
+            />
+
+        // Q1 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:textColor="#E0F7FA"
+            android:text="1. What is the name of the first satellite sent into space?"
+            android:id="@+id/textView" />
+
+        // Q1 Answers
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/Q1A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E0F7FA"
+                android:checked="true"
+                android:text="Telstar"
+                android:buttonTint="#E0F7FA"
+                />
+            <RadioButton
+                android:id="@+id/Q1A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E0F7FA"
+                android:text="Vanguard"
+                android:buttonTint="#E0F7FA"
+                />
+            <RadioButton
+                android:id="@+id/Q1A3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#E0F7FA"
+                android:text="Sputnik"
+                android:buttonTint="#E0F7FA"
+                android:onClick="question1"/>
+        </RadioGroup>
+
+
+
+
+
+        // Q2 Image
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/buzz"
+            android:layout_gravity="center"
+            />
+
+        // Q2 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:text="2. Who was the second person to set foot on the Moon? Buzz Aldrin."
+            />
+
+
+
+
+
+        // Q3 Image
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/halleys"
+            android:layout_gravity="center"
+            />
+
+        // Q3 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:text="3. When the Halley’s Comet will be visible from Earth again? 2061"
+            />
+
+
+
+
+
+        // Q4 Image
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/laika"
+            android:layout_gravity="center"
+            />
+
+        // Q4 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:text="4. What was the name of the first dog in space? Laika"
+            />
+
+
+
+
+
+        // Q5 Image
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yuri"
+            android:layout_gravity="center"
+            />
+
+        // Q5 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:text="5. Who was the first person to reach space? Yuri Gagarin, in 1961."
+            />
+
+
+
+
+
+        // Q6 Image
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rising"
+            android:layout_gravity="center"
+            />
+
+        // Q6 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:text="6. How much time does sun rays take to reach earth? 8 minutes."
+            />
+
+
+
+
+
+        // Q7 Image
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/jupiter"
+            android:layout_gravity="center"
+            />
+
+        // Q7 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:text="7. Which is the largest planet in our solar system? JUPITER."
+            />
+
+
+
+
+
+        // Q8 Image
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mercury"
+            android:layout_gravity="center"
+            />
+
+
+
+
+
+
+        // Q9 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:text="8. Which planet is closest to the sun? Mercury."
+            />
+
+        // Q9 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:text="9. When was the first manmade object sent into space? 1957."
+            />
+
+
+
+
+
+
+        // Q10 Image
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/valentina"
+            android:layout_gravity="center"
+            />
+
+        // Q10 Text
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:text="10. Who was the first woman to reach space? Valentina Tereshkova, in 1963"
+            />
+
+
+        // Temp Score View
+        <TextView
+            android:id="@+id/show_user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#E0F7FA"
+            android:textAllCaps="true"
+            android:paddingTop="40dp"
+            android:paddingBottom="40dp"
+            android:text="Final Score"/>
+
+
+
+        // Buttons for Score and Reset
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Results"
+                android:layout_gravity="center_horizontal"
+                android:onClick="results"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
